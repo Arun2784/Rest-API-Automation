@@ -8,14 +8,13 @@ import org.testng.annotations.Test;
 
 import com.qa.base.TestBase;
 import com.qa.client.RestClient;
+import com.qa.client.RestPostClient;
 
 public class GetApiTest extends TestBase {
 
 	TestBase testbase;
 	public String serviceurl;
-
 	public String apiurl;
-
 	public String url;
 	RestClient restClient;
 
@@ -37,7 +36,7 @@ public class GetApiTest extends TestBase {
 
 		restClient = new RestClient();
 
-		restClient.get(url);
+	//	restPostClient.post(serviceurl, enityString, headermap)
 
 	}
 
